@@ -14,6 +14,28 @@ Multilingual Diversity: In an increasingly interconnected world, multilingualism
 
 <br/>
 
+
+# Home Page
+
+![Home Page](https://github.com/JahirPendhari09/EduQuik/assets/128920395/eb26f485-00c3-4604-98e2-310da85ce39f)
+
+# Login Page
+
+![Login Page](https://github.com/JahirPendhari09/EduQuik/assets/128920395/8898f831-b98b-4c6b-b02e-fd5ed7cbe702)
+
+# Sign up Page
+
+![Signup Page](https://github.com/JahirPendhari09/EduQuik/assets/128920395/f5a8d756-9542-4250-84e8-4c8788e188bf)
+
+# Teachers Page
+
+![Teachers ](https://github.com/JahirPendhari09/EduQuik/assets/128920395/b5d3b8a4-513c-47cc-9590-7af9b0b1eaf8)
+
+# Courses Page
+
+![Courses Page](https://github.com/JahirPendhari09/EduQuik/assets/128920395/f1ac7903-f5e4-4652-bd91-d004da0dc999)
+
+
 # Tech Stack
 
 **Front-End:** <p >
