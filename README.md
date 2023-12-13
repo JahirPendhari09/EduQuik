@@ -1,6 +1,6 @@
-# LearnInStyle
+# EduQuik
 
-**Netlify :**  [EduQuik](https://voluble-cuchufli-58a93f.netlify.app/)
+**Netlify :**  [EduQuik](https://eduquik.netlify.app/)
 
 EduQuik Online Learning Project is an ambitious and innovative endeavor aimed at revolutionizing the way to learn new Courses. Developed by a team of dedicated language enthusiasts and tech-savvy educators, our project seeks to empower young minds with invaluable linguistic skills while fostering cross-cultural understanding and global awareness.
 
