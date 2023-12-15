@@ -9,7 +9,7 @@ const CoursesCard = () => {
   
 
   useEffect(() => {
-    axios.get('https://vast-cyan-tuna.cyclic.app/course').then((response) =>{
+    axios.get('https://fancy-flannel-nightgown-fly.cyclic.app/course').then((response) =>{
       // console.log(response.data.courses)
       setPosts(response.data.courses)
       });
@@ -57,7 +57,7 @@ const CoursesCard = () => {
               </div>
               <div className='price'>
                 <h3>
-                 ${val.price}
+                 Rs {val.price}
                 </h3>
               </div>
               <button className='outline-btn' onClick={()=>{navigate(`/enroll/${val._id}`)}}>ENROLL NOW !</button>

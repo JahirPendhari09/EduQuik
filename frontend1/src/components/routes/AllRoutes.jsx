@@ -11,17 +11,17 @@ import Home from "../home/Home"
 import { Enroll } from "../Enroll/Enroll"
 import { Login } from "../Login/Login"
 import { Signup } from "../Signup/Signup"
+import PrivateRoute from "./PrivateRoute"
 
 const AllRoutes=()=>{
-
     return(
         <div>
          <Routes>
           <Route  path='/' element={<Home/>} />
           <Route  path='/about' element={<About/>} />
-          <Route  path='/courses' element={<CourseHome/>} />
+          <Route  path='/courses' element={<PrivateRoute><CourseHome/></PrivateRoute>} />
           <Route  path='/team' element={<Team/>} />
-          <Route  path='/pricing' element={<Pricing/>} />
+          <Route  path='/pricing' element={<PrivateRoute><Pricing/></PrivateRoute>} />
           <Route  path='/journal' element={<Blog/>} />
           <Route  path='/contact'element={<Contact/>} />
           <Route path="/enroll/:id" element={<Enroll/>}/>
