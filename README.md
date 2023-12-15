@@ -62,6 +62,21 @@ Tailored Curriculum: At the heart of the EduQuik project is a carefully curated 
 - Cart Page
 - Responsive Layout
 
+## API Reference
+
+#### Courses Data
+
+```
+  GET https://fancy-flannel-nightgown-fly.cyclic.app/course
+```
+
+#### User Data
+
+```
+  POST https://fancy-flannel-nightgown-fly.cyclic.app/users/register
+  POST https://fancy-flannel-nightgown-fly.cyclic.app/users/login
+```
+
 ## Feedback
 
 If you have any Feedback, Please reach out to us at jahirpp1999@gmail.com
