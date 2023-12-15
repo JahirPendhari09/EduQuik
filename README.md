@@ -10,7 +10,6 @@ Interactive Learning Platform: We have meticulously designed an interactive and 
 
 Tailored Curriculum: At the heart of the EduQuik project is a carefully curated curriculum that addresses the unique needs and learning styles for Users. Our team of Languages experts has developed age-appropriate content, ensuring that learners progress at their own pace and achieve maximum retention.
 
-Multilingual Diversity: In an increasingly interconnected world, multilingualism has become a powerful asset. The EduQuik project offers a diverse range of Courses, allowing users to explore and master languages such as python,javaScript,Java,HTML, and more. By providing this linguistic diversity, we aim to broaden horizons and encourage a genuine appreciation for different cultures.
 
 <br/>
 
