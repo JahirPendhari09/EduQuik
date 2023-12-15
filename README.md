@@ -1,6 +1,8 @@
 # EduQuik
 
-**Netlify :**  [EduQuik](https://eduquik.netlify.app/)
+Netlify :  [EduQuik](https://eduquik.netlify.app/)
+
+Backend : [EduQuik](https://fancy-flannel-nightgown-fly.cyclic.app/)
 
 EduQuik Online Learning Project is an ambitious and innovative endeavor aimed at revolutionizing the way to learn new Courses. Developed by a team of dedicated language enthusiasts and tech-savvy educators, our project seeks to empower young minds with invaluable linguistic skills while fostering cross-cultural understanding and global awareness.
 
@@ -54,11 +56,10 @@ Tailored Curriculum: At the heart of the EduQuik project is a carefully curated 
 </p>
 
 ## Features
-
-**User Page**
 - Login & SignUp
+- Private Routes
 - Add and delete Course
-- Image Slideshow
+- Cart Page
 - Responsive Layout
 
 ## Feedback
