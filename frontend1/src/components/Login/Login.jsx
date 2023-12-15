@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import MyContext from '../Context/authContext';
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 export const Login = () => {
   const [formData, setFormData] = useState({
     email: '',
@@ -70,7 +71,7 @@ export const Login = () => {
           </div>
           <button type="submit">Login</button>
         </form>
-        <button id='signupbtn' onClick={()=>{navigate('/signup')}}>Sign Up</button>
+        <p> Do not have accont <Link to="/signup" style={{color:"red"}}>Register</Link></p>
       </div>
     </div>
   );

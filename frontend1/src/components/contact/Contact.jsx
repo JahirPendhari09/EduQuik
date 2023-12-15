@@ -33,12 +33,13 @@ const Contact = () => {
 
             <form action=''>
               <div className='flexSB'>
-                <input type='text' placeholder='Name' />
-                <input type='email' placeholder='Email' />
+                <input type='text' placeholder='Name'  required/>
+                <input type='email' placeholder='Email' required/>
               </div>
-              <input type='text' placeholder='Subject' />
-              <textarea cols='30' rows='10'>
-                Create a message here...
+              <input type='text' placeholder='Subject' required />
+              <textarea cols='30' rows='10'
+                placeholder="Create a message here..." required
+              > 
               </textarea>
               <button className='primary-btn'>SEND MESSAGE</button>
             </form>

@@ -2,15 +2,13 @@ import React, { useState } from 'react';
 import './signup.css';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export const Signup = () => {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
-    password: '',
-    city: '',
-    age: '',
-    gender: '',
+    password: ''
   });
  const navigate=useNavigate()
   const handleChange = (e) => {
@@ -76,50 +74,11 @@ export const Signup = () => {
               required
             />
           </div>
-
-          <div className="form-group">
-            <label htmlFor="city">City:</label>
-            <input
-              type="text"
-              id="city"
-              name="city"
-              value={formData.city}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="age">Age:</label>
-            <input
-              type="number"
-              id="age"
-              name="age"
-              value={formData.age}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="gender">Gender:</label>
-            <select
-              id="gender"
-              name="gender"
-              value={formData.gender}
-              onChange={handleChange}
-              required
-            >
-              <option value="">Select Gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
           <button type="submit">Sign Up</button>
         </form>
+        <p>Already have an Account <Link to="/login" style={{color:"red"}}>Login</Link></p>
       </div>
+      
     </div>
   );
 };
