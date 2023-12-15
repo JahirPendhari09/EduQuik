@@ -21,14 +21,14 @@ export const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('https://vast-cyan-tuna.cyclic.app/users/register',formData)
+    axios.post('https://fancy-flannel-nightgown-fly.cyclic.app/users/register',formData)
     .then(res=>{
-        console.log(res)
+        // console.log(res)
         alert("SIGN UP SUCCESSFULL, WELCOME TO EDUQUICK")
         navigate('/login')
     })
     .catch((err)=>{
-        console.log(err)
+        // console.log(err)
         alert("Please try again")
     })
     
