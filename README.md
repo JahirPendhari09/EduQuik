@@ -2,7 +2,7 @@
 
 Netlify :  [EduQuik](https://eduquik.netlify.app/)
 
-Backend : [EduQuik](https://fancy-flannel-nightgown-fly.cyclic.app/)
+Backend : [EduQuik](https://frightened-bracelet-bee.cyclic.app/)
 
 EduQuik Online Learning Project is an ambitious and innovative endeavor aimed at revolutionizing the way to learn new Courses. Developed by a team of dedicated language enthusiasts and tech-savvy educators, our project seeks to empower young minds with invaluable linguistic skills while fostering cross-cultural understanding and global awareness.
 
@@ -67,14 +67,14 @@ Tailored Curriculum: At the heart of the EduQuik project is a carefully curated 
 #### Courses Data
 
 ```
-  GET https://fancy-flannel-nightgown-fly.cyclic.app/course
+  GET https://frightened-bracelet-bee.cyclic.app/course
 ```
 
 #### User Data
 
 ```
-  POST https://fancy-flannel-nightgown-fly.cyclic.app/users/register
-  POST https://fancy-flannel-nightgown-fly.cyclic.app/users/login
+  POST https://frightened-bracelet-bee.cyclic.app/users/register
+  POST https://frightened-bracelet-bee.cyclic.app/users/login
 ```
 
 ## Feedback
