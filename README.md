@@ -1,6 +1,6 @@
 # EduQuik
 
-Netlify :  [EduQuik](https://eduquik.netlify.app/)
+Netlify :  [EduQuik](https://eduquikneo.netlify.app/)
 
 Backend : [EduQuik](https://frightened-bracelet-bee.cyclic.app/)
 
