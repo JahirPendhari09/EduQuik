@@ -4,8 +4,8 @@ import { team } from "../../dummydata"
 const TeamCard = () => {
   return (
     <>
-      {team.map((val) => (
-        <div className='items shadow'>
+      {team.map((val,i) => (
+        <div className='items shadow' key={i}>
           <div className='img'>
             <img src={val.cover} alt='name' />
             <div className='overlay'>

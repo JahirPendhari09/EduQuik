@@ -12,6 +12,8 @@ import { Enroll } from "../Enroll/Enroll"
 import { Login } from "../Login/Login"
 import { Signup } from "../Signup/Signup"
 import PrivateRoute from "./PrivateRoute"
+import { Cart } from "../Cart/Cart"
+import Payment from "../Payment/Payment"
 
 const AllRoutes=()=>{
     return(
@@ -21,12 +23,14 @@ const AllRoutes=()=>{
           <Route  path='/about' element={<About/>} />
           <Route  path='/courses' element={<PrivateRoute><CourseHome/></PrivateRoute>} />
           <Route  path='/team' element={<Team/>} />
-          <Route  path='/pricing' element={<PrivateRoute><Pricing/></PrivateRoute>} />
+          <Route  path='/pricing' element={<Pricing/>} />
           <Route  path='/journal' element={<Blog/>} />
           <Route  path='/contact'element={<Contact/>} />
           <Route path="/enroll/:id" element={<Enroll/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/signup" element={<Signup/>}/>
+          <Route path="/cart" element={<PrivateRoute><Cart/></PrivateRoute>}/>
+          <Route path="/payment" element={<Payment/>} />
           </Routes>
         </div>
     )

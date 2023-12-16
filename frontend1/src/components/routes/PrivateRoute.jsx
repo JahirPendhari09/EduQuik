@@ -4,8 +4,10 @@ import { useContext } from 'react'
 import MyContext from '../Context/authContext'
 const PrivateRoute = ({children}) => {
     const { status, setstatus } = useContext(MyContext);
+    const isAuth = localStorage.getItem("isAuth");
+    
   return (
-    status ? children:<Navigate to={'/login'}/>
+    status || isAuth ? children:<Navigate to={'/login'}/>
   )
 }
 
