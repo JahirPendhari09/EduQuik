@@ -32,7 +32,7 @@ const AboutCard = () => {
           </div>
         </div>
       </section>
-      <Awrapper />
+      {/* <Awrapper /> */}
     </>
   )
 }

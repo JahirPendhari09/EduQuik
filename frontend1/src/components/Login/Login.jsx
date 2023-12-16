@@ -10,7 +10,7 @@ export const Login = () => {
     email: '',
     password: '',
   });
-  const { status, setstatus } = useContext(MyContext);
+  const { status, setstatus,user,setUser } = useContext(MyContext);
  const navigate=useNavigate()
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,7 +21,7 @@ export const Login = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('https://fancy-flannel-nightgown-fly.cyclic.app/users/login',formData)
+    axios.post('https://frightened-bracelet-bee.cyclic.app/users/login',formData)
     .then((res)=>{
         // console.log(res)
         if(res.data.msg =="Wrong credentials")
@@ -31,6 +31,8 @@ export const Login = () => {
           alert("User Crediential are Invalid")
         }else{
           setstatus(true)
+          localStorage.setItem("isAuth",JSON.stringify(true))
+          setUser(res.data.user)
           alert("Login Sucessfull, Welcome to Educquik")
           navigate('/')
         }

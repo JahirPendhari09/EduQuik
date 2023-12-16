@@ -5,10 +5,13 @@ import MyContext from "../../Context/authContext"
 const Head = () => {
   //const [status,setstatus]=useState(true)
   const navigate=useNavigate()
-  const { status, setstatus } = useContext(MyContext);
+  const { status, setstatus,user } = useContext(MyContext);
+  const isAuth = localStorage.getItem("isAuth")||false
+  // console.log(isAuth,status)
+  const [render , setRender ]=useState(false)
   useEffect(()=>{
-    
-  },[])
+
+  },[render])
   return (
     <>
       <section className='head'>
@@ -17,13 +20,15 @@ const Head = () => {
             <h1>EDUQUIK</h1>
             <span>ONLINE EDUCATION & LEARNING</span>
           </div>
-          
-          <div className='social'>
-            {status?<button id="login" onClick={()=>{setstatus(false)}}>Logout</button>:<button id="login" onClick={()=>{navigate('/login')}}>LOGIN</button>}
-            {/* <i className='fab fa-facebook-f icon'></i>
-            <i className='fab fa-instagram icon'></i>
-            <i className='fab fa-twitter icon'></i>
-            <i className='fab fa-youtube icon'></i> */}
+           
+          <div>
+            { isAuth || status? <button id="login" onClick={(e)=>{
+              e.preventDefault()
+              setstatus(false)
+              setRender(!render)
+              localStorage.removeItem("isAuth");
+              
+            }}>Logout</button>:<button id="login" onClick={()=>{navigate('/login')}}>LOGIN</button>}
           </div>
         </div>
       </section>

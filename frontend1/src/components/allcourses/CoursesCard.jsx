@@ -1,25 +1,26 @@
-import React from "react"
+import React, { useContext } from "react"
 import "./courses.css"
-import { useState,useEffect } from "react"
+import { useState, useEffect } from "react"
 import axios from "axios"
-import { useNavigate } from 'react-router-dom';
+import MyContext from "../Context/authContext"
+
 const CoursesCard = () => {
-  const navigate=useNavigate()
   const [posts, setPosts] = useState([]);
-  
+  const { status, setstatus, cartArray, addNewCart } = useContext(MyContext);
 
   useEffect(() => {
-    axios.get('https://fancy-flannel-nightgown-fly.cyclic.app/course').then((response) =>{
+    let ans = axios.get('https://frightened-bracelet-bee.cyclic.app/course').then((response) => {
       // console.log(response.data.courses)
       setPosts(response.data.courses)
-      });
+    });
+    clearInterval=ans
   }, []);
-  //  console.log(posts)
+
   return (
     <>
       <section className='coursesCard'>
         <div className='container grid2'>
-          {posts?.map((val,i) => (
+          {posts?.map((val, i) => (
             <div key={i} className='items'>
               <div className='content flex'>
                 <div className='left'>
@@ -45,10 +46,10 @@ const CoursesCard = () => {
                             <p>{val.description}</p>
                           </div>
                           <div className='para'>
-                            
+
                           </div>
                         </div>
-                        <br/>
+                        <br />
                         <span>{val.category}</span>
                       </>
                     }
@@ -57,10 +58,10 @@ const CoursesCard = () => {
               </div>
               <div className='price'>
                 <h3>
-                 Rs {val.price}
+                ₹ {val.price}
                 </h3>
               </div>
-              <button className='outline-btn' onClick={()=>{navigate(`/enroll/${val._id}`)}}>ENROLL NOW !</button>
+              <button className='outline-btn' onClick={(e) => addNewCart(val)}>ADD TO CART !</button>
             </div>
           ))}
         </div>

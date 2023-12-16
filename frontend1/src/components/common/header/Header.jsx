@@ -32,6 +32,9 @@ const Header = () => {
             <li>
               <Link to='/contact'>Contact</Link>
             </li>
+            <li>
+              <Link to='/cart'>Cart</Link>
+            </li>
           </ul>
           <div className='start'>
             <div className='button'>GET CERTIFICATE</div>
