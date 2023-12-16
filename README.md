@@ -60,6 +60,7 @@ Tailored Curriculum: At the heart of the EduQuik project is a carefully curated 
 - Private Routes
 - Add and delete Course
 - Cart Page
+- Payment Page
 - Responsive Layout
 
 ## API Reference
